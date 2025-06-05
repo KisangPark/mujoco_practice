@@ -9,10 +9,10 @@
     - https://github.com/DoosanRobotics/doosan-robot/tree/main
 - 2f85 parallel gripper
     - https://github.com/google-deepmind/mujoco_menagerie/tree/main/robotiq_2f85
-(Educational purposes)
+    - (Educational purposes)
 
 ## Tutorial
-### General </br>
+### General control </br>
 - left click & drag to rotate</br>
 - right drag to move</br>
 - scroll to zoom in/out</br>
@@ -24,7 +24,10 @@
     - Keyboard option control</br>
     - github repository: https://github.com/rohanpsingh/mujoco-python-viewer </br>
 
-영상
+
+https://github.com/user-attachments/assets/ee732431-0dce-44c2-adb2-e711c3e98691
+
+
 
 ### keyboard_teleop.py</br>
 - glfw window creation</br>
@@ -39,4 +42,6 @@
     - U,I: gripper</br>
     - R to reset
 
-영상
+
+https://github.com/user-attachments/assets/1b57a839-f2ee-47e9-88d3-99dc89443523
+
