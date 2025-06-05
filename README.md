@@ -1,5 +1,7 @@
 # Mujoco Test
 
+https://github.com/user-attachments/assets/1b57a839-f2ee-47e9-88d3-99dc89443523
+
 ## Setup
 1. pip3 install mujoco
 2. pip3 install glfw
@@ -41,7 +43,4 @@ https://github.com/user-attachments/assets/ee732431-0dce-44c2-adb2-e711c3e98691
     - O,P: top y-axis joint rotation</br>
     - U,I: gripper</br>
     - R to reset
-
-
-https://github.com/user-attachments/assets/1b57a839-f2ee-47e9-88d3-99dc89443523
 
