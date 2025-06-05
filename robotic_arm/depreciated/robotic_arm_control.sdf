@@ -1,0 +1,427 @@
+<sdf version='1.9'>
+  <model name='a0912'>
+    <joint name='world_fixed' type='fixed'>
+      <pose relative_to='__model__'>0 0 0 0 0 0</pose>
+      <parent>world</parent>
+      <child>base_0</child>
+    </joint>
+    <link name='base_0'>
+      <pose relative_to='world_fixed'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>4e-06 -0.001016 0.08180999999999999 0 0 0</pose>
+        <mass>3.6349999999999998</mass>
+        <inertia>
+          <ixx>0.022159999999999999</ixx>
+          <ixy>5.8000999999999997e-06</ixy>
+          <ixz>6.1940999999999997e-06</ixz>
+          <iyy>0.024834999999999999</iyy>
+          <iyz>-5.3034000000000001e-05</iyz>
+          <izz>0.021062999999999998</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_0_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_0_0.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_0_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_0_0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint1' type='revolute'>
+      <pose relative_to='base_0'>0 0 0.195 0 0 0</pose>
+      <parent>base_0</parent>
+      <child>link1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-6.2831999999999999</lower>
+          <upper>6.2831999999999999</upper>
+          <effort>411</effort>
+          <velocity>3.1415999999999999</velocity>
+        </limit>
+        <dynamics>
+          <damping>60</damping>
+          <friction>4</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link1'>
+      <pose relative_to='joint1'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>4.4e-05 0.029982 -0.01112 0 0 0</pose>
+        <mass>7.8630000000000004</mass>
+        <inertia>
+          <ixx>0.045838999999999998</ixx>
+          <ixy>1.2758999999999999e-05</ixy>
+          <ixz>-3.6168000000000003e-05</ixz>
+          <iyy>0.032912999999999998</iyy>
+          <iyz>-0.0029965</iyz>
+          <izz>0.044399000000000001</izz>
+        </inertia>
+      </inertial>
+      <collision name='link1_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.20000000000000001</length>
+            <radius>0.080000000000000002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='link1_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_1_0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='link1_visual_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_1_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='link1_visual_2'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_1_2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint2' type='revolute'>
+      <pose relative_to='link1'>0 0.039 0 3.141592653589793 -1.57059265358981 1.570592653589896</pose>
+      <parent>link1</parent>
+      <child>link2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-6.2831999999999999</lower>
+          <upper>6.2831999999999999</upper>
+          <effort>411</effort>
+          <velocity>3.1415999999999999</velocity>
+        </limit>
+        <dynamics>
+          <damping>50</damping>
+          <friction>3</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link2'>
+      <pose relative_to='joint2'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.19748 0.001426 0.13191 0 0 0</pose>
+        <mass>10.984999999999999</mass>
+        <inertia>
+          <ixx>0.04446</ixx>
+          <ixy>-0.0049947999999999998</ixy>
+          <ixz>-0.010992</ixz>
+          <iyy>0.67642000000000002</iyy>
+          <iyz>-2.8483000000000002e-05</iyz>
+          <izz>0.67427999999999999</izz>
+        </inertia>
+      </inertial>
+      <collision name='link2_collision'>
+        <pose>0.3 0 0.1525 0 -1.570796326794897 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.59999999999999998</length>
+            <radius>0.080000000000000002</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='link2_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_2_0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='link2_visual_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_2_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='link2_visual_2'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_2_2.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint3' type='revolute'>
+      <pose relative_to='link2'>0.5600000000000001 0 0 0 0 1.571</pose>
+      <parent>link2</parent>
+      <child>link3</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-2.7925</lower>
+          <upper>2.7925</upper>
+          <effort>194</effort>
+          <velocity>3.1415999999999999</velocity>
+        </limit>
+        <dynamics>
+          <damping>40</damping>
+          <friction>2</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link3'>
+      <pose relative_to='joint3'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>8.500000000000001e-05 -0.002513 0.032058 0 0 0</pose>
+        <mass>2.8809999999999998</mass>
+        <inertia>
+          <ixx>0.012756</ixx>
+          <ixy>-5.4257000000000004e-06</ixy>
+          <ixz>1.6402e-05</ixz>
+          <iyy>0.011416000000000001</iyy>
+          <iyz>-0.00019890000000000001</iyz>
+          <izz>0.0080651999999999998</izz>
+        </inertia>
+      </inertial>
+      <visual name='link3_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_3_0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='link3_visual_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_3_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint4' type='revolute'>
+      <pose relative_to='link3'>0 -0.516 0 1.571 0 0</pose>
+      <parent>link3</parent>
+      <child>link4</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-6.2831999999999999</lower>
+          <upper>6.2831999999999999</upper>
+          <effort>50</effort>
+          <velocity>6.2831999999999999</velocity>
+        </limit>
+        <dynamics>
+          <damping>20</damping>
+          <friction>1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link4'>
+      <pose relative_to='joint4'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-9.6e-05 0.085314 -0.13975 0 0 0</pose>
+        <mass>3.2730000000000001</mass>
+        <inertia>
+          <ixx>0.12246</ixx>
+          <ixy>2.3904999999999999e-05</ixy>
+          <ixz>2.5021999999999999e-05</ixz>
+          <iyy>0.11307</iyy>
+          <iyz>-0.027994999999999999</iyz>
+          <izz>0.017186</izz>
+        </inertia>
+      </inertial>
+      <collision name='link4_collision'>
+        <pose>0 0.075 -0.2 -0.46 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.40000000000000002</length>
+            <radius>0.050000000000000003</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='link4_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_4_0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='link4_visual_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_4_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint5' type='revolute'>
+      <pose relative_to='link4'>0 0 0 -1.571 0 0</pose>
+      <parent>link4</parent>
+      <child>link5</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-6.2831999999999999</lower>
+          <upper>6.2831999999999999</upper>
+          <effort>50</effort>
+          <velocity>6.2831999999999999</velocity>
+        </limit>
+        <dynamics>
+          <damping>10</damping>
+          <friction>1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link5'>
+      <pose relative_to='joint5'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.000109 -0.003286 0.01477 0 0 0</pose>
+        <mass>2.141</mass>
+        <inertia>
+          <ixx>0.013145</ixx>
+          <ixy>-4.7132e-06</ixy>
+          <ixz>8.5804e-06</ixz>
+          <iyy>0.0073071999999999998</iyy>
+          <iyz>-5.999e-05</iyz>
+          <izz>0.0090475999999999994</izz>
+        </inertia>
+      </inertial>
+      <collision name='link5_collision'>
+        <pose>0 0 0 1.571 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.14999999999999999</length>
+            <radius>0.059999999999999998</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='link5_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_5_0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='link5_visual_1'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_5_1.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='joint6' type='revolute'>
+      <pose relative_to='link5'>0 -0.124 0 1.571 0 0</pose>
+      <parent>link5</parent>
+      <child>link6</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-6.2831999999999999</lower>
+          <upper>6.2831999999999999</upper>
+          <effort>50</effort>
+          <velocity>6.2831999999999999</velocity>
+        </limit>
+        <dynamics>
+          <damping>10</damping>
+          <friction>1</friction>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='link6'>
+      <pose relative_to='joint6'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>-1.9e-05 -6e-06 -0.05227 0 0 0</pose>
+        <mass>0.78400000000000003</mass>
+        <inertia>
+          <ixx>0.0067403000000000003</ixx>
+          <ixy>5.2372999999999998e-06</ixy>
+          <ixz>2.4957000000000001e-06</ixz>
+          <iyy>0.0048015000000000002</iyy>
+          <iyz>8.3670999999999999e-06</iyz>
+          <izz>0.0059696000000000003</izz>
+        </inertia>
+      </inertial>
+      <collision name='link6_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_6_0.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='link6_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>model://robotic_arm/meshes/a0912_blue/A0912_6_0.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+      <joint_name>joint1</joint_name>
+      <topic>j1_pos</topic>
+      <p_gain>1</p_gain>
+      <i_gain>0.1</i_gain>
+      <d_gain>0.01</d_gain>
+      <i_max>1</i_max>
+      <i_min>-1</i_min>
+      <cmd_max>1000</cmd_max>
+      <cmd_min>-1000</cmd_min>
+    </plugin>
+    
+  </model>
+</sdf>
