@@ -11,8 +11,8 @@ data = mujoco.MjData(model)
 viewer = mujoco_viewer.MujocoViewer(model, data)
 
 # reference position
-pos_1 = [0, -0.8, 2.5, 0, -0.3, 0, 0]
-pos_2 = [0.8, 1.3, 0.2, 0, -0.3, 0, 200]
+pos_1 = [0, -0.8, 2.5, 0, -0.4, 0, 0]
+pos_2 = [0.8, 0.8, 0.4, 0, -0.3, 0, 200]
 
 mujoco.mj_resetData(model, data)
 

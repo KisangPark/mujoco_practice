@@ -198,9 +198,9 @@ def key_callback(window, key, scancode, action, mods):
 
         # 5. gripper (index 6)
         if key == glfw.KEY_U: # left move
-            control_signal[6] += 1
+            control_signal[6] += 5
         elif key == glfw.KEY_I:
-            control_signal[6] -= 1
+            control_signal[6] -= 5
 
         if key == glfw.KEY_R:
             control_signal = np.zeros(7).tolist()

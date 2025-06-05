@@ -64,11 +64,11 @@
     <default class="collision">
       <geom type="mesh" group="3"/>
       <default class="pad_box1">
-        <geom mass="0" type="box" pos="0 -0.0026 0.028125" size="0.011 0.004 0.009375" friction="0.7"
+        <geom mass="0" type="box" pos="0 -0.0026 0.028125" size="0.011 0.004 0.009375" friction="10 1 0.001"
           solimp="0.95 0.99 0.001" solref="0.004 1" priority="1" rgba="0.55 0.55 0.55 1"/>
       </default>
       <default class="pad_box2">
-        <geom mass="0" type="box" pos="0 -0.0026 0.009375" size="0.011 0.004 0.009375" friction="0.6"
+        <geom mass="0" type="box" pos="0 -0.0026 0.009375" size="0.011 0.004 0.009375" friction="10 1 0.001"
           solimp="0.95 0.99 0.001" solref="0.004 1" priority="1" rgba="0.45 0.45 0.45 1"/>
       </default>
     </default>
@@ -94,11 +94,11 @@
             <geom class="collision" mesh="A0912_1_2"/>
 
             <!-- joint1: vertical -->
-            <joint name="joint1" pos="0 0 0" axis="0 0 1" range="-6.2832 6.2832" actuatorfrcrange="-411 411" damping="60" frictionloss="4"/>
+            <joint name="joint1" pos="0 0 0" axis="0 0 1" range="-6.2832 6.2832" actuatorfrcrange="-6000 6000" damping="50" frictionloss="2"/>
                 
                 <body name="link2" quat="0 0.70710678 0 0.70710678">
                     <inertial pos="0.19748 0.13191 0.001426" quat="0 0.70710678 0 0.70710678" mass="10.985" diaginertia="0.676461 0.67447 0.0442288"/>
-                    <joint name="joint2" pos="0 0 0" axis="0 1 0" range="-6.2832 6.2832" actuatorfrcrange="-411 411" damping="50" frictionloss="3"/>
+                    <joint name="joint2" pos="0 0 0" axis="0 1 0" range="-6.2832 6.2832" actuatorfrcrange="-411 411" damping="70" frictionloss="3"/>
                     <geom class="visual" mesh="A0912_2_0" material="metal"/>
                     <geom class="collision" mesh="A0912_2_0"/>
                     <geom class="visual" mesh="A0912_2_1" material="purple"/>
@@ -108,7 +108,7 @@
                     
                     <body name="link3" pos="0.56 0 0" quat="7.07106781e-01 -4.32978028e-17 7.07106781e-01 4.32978028e-17">
                         <inertial pos="8.5e-05 -0.002513 -0.032058" quat="0 0 0 1" mass="2.881" diaginertia="0.0127561 0.0114277 0.00805338"/>
-                        <joint name="joint3" pos="0 0 0" axis="0 1 0" range="-2.7925 2.7925" actuatorfrcrange="-194 194" damping="40" frictionloss="2"/>
+                        <joint name="joint3" pos="0 0 0" axis="0 1 0" range="-2.7925 2.7925" actuatorfrcrange="-194 194" damping="45" frictionloss="2"/>
                         <geom class="visual" mesh="A0912_3_0" material="metal"/>
                         <geom class="collision" mesh="A0912_3_0"/>
                         <geom class="visual" mesh="A0912_3_1" material="purple"/>
@@ -124,7 +124,7 @@
 
                             <body name="link5" quat="7.07106781e-01 -7.07106781e-01 -4.32978028e-17 4.32978028e-17">
                                 <inertial pos="0.000109 -0.003286 -0.01477" quat="0 0 0 1" mass="2.141" diaginertia="0.013145 0.00904965 0.00730513"/>
-                                <joint name="joint5" pos="0 0 0" axis="0 1 0" range="-6.2832 6.2832" actuatorfrcrange="-50 50" damping="10" frictionloss="1"/>
+                                <joint name="joint5" pos="0 0 0" axis="0 1 0" range="-6.2832 6.2832" actuatorfrcrange="-50 50" damping="15" frictionloss="1"/>
                                 <geom class="visual" mesh="A0912_5_0" material="metal"/>
                                 <geom class="collision" mesh="A0912_5_0"/>
                                 <geom class="visual" mesh="A0912_5_1" material="purple"/>
@@ -281,13 +281,13 @@
 
   <!-- actuators for joints-->
   <actuator>
-    <position ctrllimited="true" ctrlrange="-1.5 1.5" joint="joint1" kp="30000"/>
-    <position ctrllimited="true" ctrlrange="-1.5 1.5" joint="joint2" kp="400"/>
-    <position ctrllimited="true" ctrlrange="-2.5 2.5" joint="joint3" kp="300"/>
-    <position ctrllimited="true" ctrlrange="-1.5 1.5" joint="joint4" kp="400"/>
-    <position ctrllimited="true" ctrlrange="-2.5 2.5" joint="joint5" kp="200"/>
-    <position ctrllimited="true" ctrlrange="-1.5 1.5" joint="joint6" kp="300"/>
-    <general name="fingers_actuator" biastype="affine" tendon="split" forcerange="-5 5" ctrlrange="0 255"
+    <position ctrllimited="true" ctrlrange="-1.5 1.5" joint="joint1" kp="20000"/>
+    <position ctrllimited="true" ctrlrange="-1.5 1.5" joint="joint2" kp="300"/>
+    <position ctrllimited="true" ctrlrange="-2.5 2.5" joint="joint3" kp="150"/>
+    <position ctrllimited="true" ctrlrange="-1.5 1.5" joint="joint4" kp="100"/>
+    <position ctrllimited="true" ctrlrange="-2.5 2.5" joint="joint5" kp="100"/>
+    <position ctrllimited="true" ctrlrange="-1.5 1.5" joint="joint6" kp="100"/>
+    <general name="fingers_actuator" biastype="affine" tendon="split" forcerange="-50 50" ctrlrange="0 255"
       gainprm="0.3137255 0 0" biasprm="0 -100 -10"/>
   </actuator>
 
