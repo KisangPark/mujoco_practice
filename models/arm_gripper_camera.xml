@@ -1,4 +1,4 @@
-<mujoco model="gripper_arm">
+<mujoco model="gripper_arm_camera">
   <compiler angle="radian"/>
   <!--compiler angle="degree"-->
 
@@ -94,11 +94,11 @@
             <geom class="collision" mesh="A0912_1_2"/>
 
             <!-- joint1: vertical -->
-            <joint name="joint1" pos="0 0 0" axis="0 0 1" range="-6.2832 6.2832" damping="10" actuatorfrcrange="-50000 50000" frictionloss="4"/>
+            <joint name="joint1" pos="0 0 0" axis="0 0 1" range="-6.2832 6.2832" damping="5" actuatorfrcrange="-50000 50000" frictionloss="4"/>
                 
                 <body name="link2" quat="0 0.70710678 0 0.70710678">
                     <inertial pos="0.19748 0.001426 0.13191" quat="0.494865 0.500903 0.49028 0.513644" mass="10.985" diaginertia="0.676461 0.67447 0.0442288"/>
-                    <joint name="joint2" pos="0 0 0" axis="0 1 0" range="-6.2832 6.2832" actuatorfrcrange="-500 500" damping="70" frictionloss="70"/>
+                    <joint name="joint2" pos="0 0 0" axis="0 1 0" range="-6.2832 6.2832" actuatorfrcrange="-500 500" damping="70" frictionloss="10"/>
                     <geom class="visual" mesh="A0912_2_0" material="metal"/>
                     <geom class="collision" mesh="A0912_2_0"/>
                     <geom class="visual" mesh="A0912_2_1" material="purple"/>
@@ -283,7 +283,7 @@
   <actuator>
     <position ctrllimited="true" ctrlrange="-1.5 1.5" joint="joint1" kp="30000"/>
     <position ctrllimited="true" ctrlrange="-1.5 1.5" joint="joint2" kp="400"/>
-    <position ctrllimited="true" ctrlrange="-2.5 2.5" joint="joint3" kp="400"/>
+    <position ctrllimited="true" ctrlrange="-2.5 2.5" joint="joint3" kp="300"/>
     <position ctrllimited="true" ctrlrange="-1.5 1.5" joint="joint4" kp="400"/>
     <position ctrllimited="true" ctrlrange="-2.5 2.5" joint="joint5" kp="200"/>
     <position ctrllimited="true" ctrlrange="-1.5 1.5" joint="joint6" kp="300"/>

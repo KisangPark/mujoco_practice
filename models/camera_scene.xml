@@ -1,5 +1,5 @@
 <mujoco model="gripper arm scene">
-  <include file="step_by_step.xml"/>
+  <include file="arm_gripper_camera.xml"/>
 
   <!-- visual tag: light and other default visual settings for scene -->
   <visual>

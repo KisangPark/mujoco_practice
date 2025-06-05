@@ -34,7 +34,7 @@ import sys
 """ SETUP """
 
 # 1-1. get model & data
-model = mujoco.MjModel.from_xml_path('robotic_arm/camera_scene.xml')
+model = mujoco.MjModel.from_xml_path('models/camera_scene.xml')
 data = mujoco.MjData(model)
 
 # return camera ID
