@@ -4,7 +4,7 @@ import mujoco_viewer
 import numpy as np
 import time
 
-model = mujoco.MjModel.from_xml_path('models/camera_scene.xml')
+model = mujoco.MjModel.from_xml_path('mjcf/a0912/camera_scene.xml')
 data = mujoco.MjData(model)
 
 # create the viewer object

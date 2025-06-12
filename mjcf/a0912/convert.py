@@ -1,3 +1,5 @@
+""" ASCII stl to BINARY stl"""
+
 import stl
 from stl import mesh
 import os 
