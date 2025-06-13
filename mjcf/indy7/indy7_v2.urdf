@@ -51,7 +51,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_0.stl"/>
+        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_0_visual.stl"/>
       </geometry>
       <material name="indy_white"/>
     </visual>
@@ -71,7 +71,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_1.stl"/>
+        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_1_visual.stl"/>
       </geometry>
       <material name="indy_white"/>
     </visual>
@@ -91,7 +91,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_2.stl"/>
+        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_2_visual.stl"/>
       </geometry>
       <material name="indy_white"/>
     </visual>
@@ -111,7 +111,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_3.stl"/>
+        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_3_visual.stl"/>
       </geometry>
       <material name="indy_white"/>
     </visual>
@@ -131,7 +131,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_4.stl"/>
+        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_4_visual.stl"/>
       </geometry>
       <material name="indy_white"/>
     </visual>
@@ -151,7 +151,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_5.stl"/>
+        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_5_visual.stl"/>
       </geometry>
       <material name="indy_white"/>
     </visual>
@@ -171,7 +171,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_6.stl"/>
+        <mesh filename="file:///home/kisangpark/workspace/mujoco_test/mjcf/indy7/visual/Indy7_v2_6_visual.stl"/>
       </geometry>
       <material name="indy_white"/>
     </visual>
