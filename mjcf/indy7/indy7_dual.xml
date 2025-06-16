@@ -1,0 +1,57 @@
+<mujoco model="indy7_dual">
+
+  <asset>
+    <!-- materials: color -->
+    <material name="black" rgba="0.0 0.0 0.0 1.0"/>
+    <material name="blue" rgba="0.0 0.0 0.8 1.0"/>
+    <material name="green" rgba="0.0 0.8 0.0 1.0"/>
+    <material name="white" rgba="0.8941176470588236 0.8941176470588236 0.8941176470588236 1.0"/>
+    <material name="grey" rgba="0.2 0.2 0.2 1.0"/>
+    <material name="orange" rgba="1.0 0.4235294117647059 0.0392156862745098 1.0"/>
+    <material name="brown" rgba="0.8705882352941177 0.8117647058823529 0.7647058823529411 1.0"/>
+    <material name="red" rgba="0.8 0.0 0.0 1.0"/>
+    <material name="metal" rgba="0.501960784313725 0.501960784313725 0.501960784313725 1"/>
+    
+
+    <!-- collision meshes -->
+    <mesh name="indy7_col_0" file="collision/Indy7_v2_0.stl"/>
+    <mesh name="indy7_col_1" file="collision/Indy7_v2_1.stl"/>
+    <mesh name="indy7_col_2" file="collision/Indy7_v2_2.stl"/>
+    <mesh name="indy7_col_3" file="collision/Indy7_v2_3.stl"/>
+    <mesh name="indy7_col_4" file="collision/Indy7_v2_4.stl"/>
+    <mesh name="indy7_col_5" file="collision/Indy7_v2_5.stl"/>
+    <mesh name="indy7_col_6" file="collision/Indy7_v2_6.stl"/>
+
+    <!-- visual meshes -->
+    <mesh name="indy7_viz_0" file="visual/Indy7_v2_0_visual.stl"/>
+    <mesh name="indy7_viz_1" file="visual/Indy7_v2_1_visual.stl"/>
+    <mesh name="indy7_viz_2" file="visual/Indy7_v2_2_visual.stl"/>
+    <mesh name="indy7_viz_3" file="visual/Indy7_v2_3_visual.stl"/>
+    <mesh name="indy7_viz_4" file="visual/Indy7_v2_4_visual.stl"/>
+    <mesh name="indy7_viz_5" file="visual/Indy7_v2_5_visual.stl"/>
+    <mesh name="indy7_viz_6" file="visual/Indy7_v2_6_visual.stl"/>
+
+  </asset>
+
+
+  <default>
+    <default class="visual">
+      <!-- visual mesh: contact configuration false -->
+      <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+    </default>
+    
+    <default class="collision">
+      <geom type="mesh" group="3"/>
+    </default>
+  </default>
+
+  <worldbody>
+
+    <body name="indy7_right" pos="1.2 0 0" quat="0 0 0 1">
+      <include file="indy7_r.xml"/>
+    </body>
+    <body name="indy7_left" pos="-1.2 0 0" quat="1 0 0 0">
+      <include file="indy7_l.xml"/>
+    </body>
+  </worldbody>
+</mujoco>

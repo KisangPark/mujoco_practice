@@ -1,0 +1,51 @@
+<mujoco model="indy7_right">
+
+<body name="base_0_r">
+    <geom class="visual" mesh="indy7_viz_0" material="white"/>
+    <geom class="collision" mesh="indy7_col_0"/>
+
+    <body name="link1_r" pos="0 0 0.0775">
+        <inertial pos="-0.00027386 -0.0434877 0.132167" quat="0.982444 0.183134 0.00703651 0.0348685" mass="11.4396" diaginertia="0.350991 0.34711 0.0177091"/>
+        <geom class="visual" mesh="indy7_viz_1" material="white"/>
+        <geom class="collision" mesh="indy7_col_1"/>
+        <joint name="joint0_r" pos="0 0 0" axis="0 0 1" range="-3.05433 3.05433" actuatorfrcrange="-431.97 431.97"/>
+        
+        <body name="link2_r" pos="0 -0.109 0.222" quat="0.707107 0.707107 0 0">
+            <inertial pos="-0.00010864 0.290719 0.0458825" quat="0.733846 0.679316 0.00017085 -0.00052205" mass="6.11384" diaginertia="0.746556 0.726108 0.0343967"/>
+            <geom class="visual" mesh="indy7_viz_2" material="white"/>
+            <geom class="collision" mesh="indy7_col_2"/>
+            <joint name="joint1_r" pos="0 0 0" axis="0 0 1" range="-3.05433 3.05433" actuatorfrcrange="-431.97 431.97"/>
+            
+            <body name="link3_r" pos="0 0.45 -0.0305" quat="-5.10341e-12 0 0 1">
+                <inertial pos="6.691e-05 -0.168022 -0.0702567" quat="0.815722 -0.578402 0.00390007 -0.0057419" mass="2.68212" diaginertia="0.113733 0.11198 0.00450654"/>
+                <geom class="visual" mesh="indy7_viz_3" material="white"/>
+                <geom class="collision" mesh="indy7_col_3"/>
+                <joint name="joint2_r" pos="0 0 0" axis="0 0 1" range="-3.05433 3.05433" actuatorfrcrange="-197.23 197.23"/>
+            
+                <body name="link4_r" pos="0 -0.267 -0.075" quat="-3.60866e-12 3.60866e-12 -0.707107 0.707107">
+                    <inertial pos="-0.00026808 -0.0710597 0.0764533" quat="0.387295 -0.920673 0.0447755 -0.0189362" mass="2.12831" diaginertia="0.0279582 0.0273248 0.00202289"/>
+                    <geom class="visual" mesh="indy7_viz_4" material="white"/>
+                    <geom class="collision" mesh="indy7_col_4"/>
+                    <joint name="joint3_r" pos="0 0 0" axis="0 0 1" range="-3.05433 3.05433" actuatorfrcrange="-79.79 79.79"/>
+                    
+                    <body name="link5_r" pos="0 -0.114 0.0835" quat="0.707107 0.707107 0 0">
+                        <inertial pos="-0.00022538 -0.00354123 0.0765076" quat="0.9996 -0.0280658 0.00160083 0.00324225" mass="2.32413" diaginertia="0.017719 0.0159752 0.0035442"/>
+                        <geom class="visual" mesh="indy7_viz_5" material="white"/>
+                        <geom class="collision" mesh="indy7_col_5"/>
+                        <joint name="joint4_r" pos="0 0 0" axis="0 0 1" range="-3.05433 3.05433" actuatorfrcrange="-79.79 79.79"/>
+                    
+                        <body name="link6_r" pos="0 0.052 0.085" quat="0.707107 -0.707107 0 0">
+                            <inertial pos="0 -0.00071501 0.0321912" quat="0.999851 -0.0138065 0.000128969 0.0103174" mass="0.396523" diaginertia="0.000778395 0.000765798 0.000512557"/>
+                            <geom class="visual" mesh="indy7_viz_6" material="white"/>
+                            <geom class="collision" mesh="indy7_col_6"/>
+                            <joint name="joint5_r" pos="0 0 0" axis="0 0 1" range="-3.75246 3.75246" actuatorfrcrange="-79.79 79.79"/>
+                        
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </body>
+</body>
+
+</mujoco>
